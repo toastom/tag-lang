@@ -22,13 +22,13 @@ Checkout the `docs/` folder for current tag language `grammar` and future `synta
 ---
 ### Build
 
-Building the compiler assumes an x86_64 Linux system with `gcc` and `nasm` installed. This project is perhaps the easiest possible install. Literally just
+Building the compiler assumes an x86_64 Linux system with `gcc` and `nasm` installed. This project is perhaps the easiest possible install right now. Literally just
 
-`git clone <project url>`
+`git clone https://github.com/toastom/tag-lang.git`
 
-`cd <path-to-project>`
+`cd <path-to-repo>`
 
-`gcc main.c Tokenizer.c Parser.c Generation.c -o tag`
+`gcc src/* -o tag`
 
 then create a tag source code file to compile!
 
@@ -50,11 +50,22 @@ and run the generated out file!
 Hello, world!
 ```
 
-Thanks for checking this out. It's probably not going anywhere and I have no real big plans for the future, but if you want to see potential syntax and the current grammar implemented, go visit the`docs/` folder in this repo.
+Thanks for checking this out. It's probably not going anywhere and I have no real big plans for the future, but if you want to see a proposed syntax and the current grammar, go visit the`docs/` folder in this repo.
 
-### Roadmap, current and potential future features
+### Development and potential future features
 
 - [x] `ret <int>;` Return from program with `int` exit code 
+- [x] `-- SQL-style single-line comments`
+- [ ] Multi-line comments
+```
+===
+this
+is
+a
+multi-line
+comment
+===
+```
 - [ ] `disp("string");` Print `string` to screen 
 - [ ]  variable assignment and data types 
 - [ ]  `if`, `else if`, `else`
@@ -67,8 +78,7 @@ Thanks for checking this out. It's probably not going anywhere and I have no rea
 - [ ] AVR compiler to compile tag code for Arduino
 - [ ] 6502 compiler to compile tag code for Ben Eater's homemade computer
 
-
-
+Yes, I know, the code is an utter mess in its current state. I'm still learning how a compiler works and at the same time trying to figure out how to translate someone else's nice, modern, object oriented C++ code to C. Be patient.
 
 
 

@@ -148,7 +148,12 @@
   },
   "active": "eb2931c8ee1e6f92",
   "lastOpenFiles": [
+    "docs/syntax.md",
     "docs/grammar.md",
-    "README.md"
+    "README.md",
+    "out",
+    "out.o",
+    "out.asm",
+    "tag"
   ]
 }
