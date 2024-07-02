@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "94cea7fd88866ecf",
+    "type": "split",
+    "children": [
+      {
+        "id": "da08c5bcd0f0f228",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dba021fe45b20852",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "grammar.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f98e1b8be3d48e99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "syntax.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7f6cb0cb22842b0a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "19a7e0e41d390cf7",
+    "type": "split",
+    "children": [
+      {
+        "id": "21b141e27cf39ffe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "badf46e37d22faed",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d97df8e80ae4dc96",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7cb5622407f6ffbd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4ee5a38118961ac7",
+    "type": "split",
+    "children": [
+      {
+        "id": "c69fef31fc455fcf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25a12b9a98cf14b3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dee1946b9ed3f473",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "895aa4f227bb8bef",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "58e07b735a6f1692",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7f6cb0cb22842b0a",
+  "lastOpenFiles": [
+    "syntax.md",
+    "Untitled",
+    "Untitled.md",
+    "grammar.md"
+  ]
+}
