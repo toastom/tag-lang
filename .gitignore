@@ -1,3 +1,5 @@
 code.tag
 out.*
 *.txt
+.obsidian/*
+.vscode/*
