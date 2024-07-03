@@ -1,5 +1,7 @@
+.obsidian/*
+.vscode/*
+build/*
+tag
 code.tag
 out.*
 *.txt
-.obsidian/*
-.vscode/*

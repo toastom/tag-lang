@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "docs/grammar.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "docs/grammar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "docs/grammar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "docs/grammar.md"
               }
             }
           }
@@ -148,12 +148,16 @@
   },
   "active": "eb2931c8ee1e6f92",
   "lastOpenFiles": [
+    "README.md",
+    "build/out",
+    "build/out.o",
+    "tag",
+    "build/out.asm",
+    "build",
     "docs/syntax.md",
     "docs/grammar.md",
-    "README.md",
     "out",
     "out.o",
-    "out.asm",
-    "tag"
+    "out.asm"
   ]
 }

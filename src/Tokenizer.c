@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <sysexits.h>
 
 #include "Tokenizer.h"
 
@@ -51,8 +52,11 @@ char* type_to_str(token_type_t type){
 		case k_ret:
 			type_str = "ret";
 			break;
+		case k_exit:
+			type_str = "exit";
+			break;
 		case k_tag_stop:
-			type_str = "tag_stop";
+			type_str = "tagstop";
 			break;
 		case eof:
             type_str = "eof";
@@ -110,8 +114,16 @@ void tokenize(token_t* tokens, char* file_str){
                 t++;
                 continue;
             }
+            else if(strcmp(word, "exit") == 0) {
+//                printf("FOUND keyword %s\n", word);
+                tokens[t] = (token_t){.type = k_exit, .value = "exit"};
+                memset(word, 0, sizeof(word));
+                w = 0;
+                t++;
+                continue;
+            }
 			else if(strcmp(word, "tagstop") == 0) {
-				tokens[t] = (token_t){.type = k_tag_stop, .value = "tag_stop"};
+				tokens[t] = (token_t){.type = k_tag_stop, .value = "tagstop"};
                 memset(word, 0, sizeof(word));
                 w = 0;
                 t++;
@@ -191,7 +203,7 @@ void tokenize(token_t* tokens, char* file_str){
 				// single-line strings only
 				if(c == ';') {
 					printf("ERROR: strings must be contained within one line\n");
-					exit(1);
+					exit(EX_DATAERR);
 				}
 				word[w] = consume(file_str, 0);
 				w++;
@@ -210,8 +222,6 @@ void tokenize(token_t* tokens, char* file_str){
         }
         // comments! single line
         else if(peek(file_str, 0) == '-' && peek(file_str, 1) == '-') {
-        	//consume(file_str, 0);
-        	//consume(file_str, 0);
         	while(peek(file_str, 0) != '\n') {
         		consume(file_str, 0);
         	}

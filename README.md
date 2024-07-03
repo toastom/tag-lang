@@ -28,7 +28,7 @@ Building the compiler assumes an x86_64 Linux system with `gcc` and `nasm` insta
 
 `cd <path-to-repo>`
 
-`gcc src/* -o tag`
+`gcc src/*.c -o tag`
 
 then create a tag source code file to compile!
 

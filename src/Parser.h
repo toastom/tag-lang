@@ -3,38 +3,32 @@
 #include "Tokenizer.h"
 
 /*
-// NodeTerm is either...
-NodeExpr -> {
-	token int
-	string
-}
-because we're doing "is either" we can prob use a union
-*/
-/*
 typedef struct node_disp {
 	token_t str;
 } NodeDisp;
 */
-
+/*
 typedef struct {
 	token_t int_lit;
 } NodeExprIntLit;
+*/
 
 typedef struct {
 	token_t ident;
 } NodeExprIdent;
 
 typedef union {
-	NodeExprIntLit node_int_lit;
-	NodeExprIdent node_ident;
+	token_t int_lit;
+	token_t ident;
+	token_t string;
 } NodeExpr;
 
 typedef struct {
-	// which keyword was used to declare a variable
-	token_type_t type;
-	token_t ident;
+	token_type_t keyword; // only put the keyword associated with statement in here
+	token_t ident; // ident is optional, for ex -> int: ident = expr;
+				   // but statement can also be disp(expr);
 	NodeExpr expr;
-} NodeStmtTypedef;
+} NodeStmt;
 
 /*
 typedef struct {
@@ -51,14 +45,17 @@ typedef struct {
 	token_t string;
 } NodeDisp;
 
+/*
 typedef union {
 	NodeExit node_exit;
 	NodeDisp node_disp;
-	NodeStmtTypedef node_typedef;
+	NodeStmtType node_type;
 } NodeStmt;
+*/
 
 token_t p_peek(token_t* tokens, int offset);
 token_t p_consume(token_t* tokens, int offset);
-void* parse_program(token_t* tokens);
+token_t try_consume(token_t* tokens, token_type_t type);
+NodeStmt* parse_program(token_t* tokens, NodeStmt* program);
 NodeExpr parse_expr(token_t* tokens);
-
+NodeStmt parse_stmt(token_t* tokens);

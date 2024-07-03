@@ -1,14 +1,8 @@
 #pragma once
+
 #include <stddef.h>
 
-#define SUCCESS 0
-#define ERR_FILE -1
-#define ERR_TOKEN -2
-#define ERR_PARSE -3
-#define ERR_GEN -4
-
 #define WORD_SIZE 32
- 
 
 typedef enum TokenType {
 	eof,
@@ -27,7 +21,9 @@ typedef enum TokenType {
 	// keywords
 	k_int,
 	k_disp,
+	k_str,
 	k_ret,
+	k_exit,
 	k_tag_stop
 } token_type_t;
 
